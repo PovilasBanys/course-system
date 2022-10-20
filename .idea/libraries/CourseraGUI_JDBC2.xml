@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CourseraGUI_JDBC2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/CourseraGUI/src/CourseraGUI_JDBC.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

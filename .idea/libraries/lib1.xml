@@ -1,0 +1,46 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-oauth2-core-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-crypto-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-cas-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-test-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-oxm-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-jms-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-ws.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-aspects-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-core-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-acl-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-context-support-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-ldap-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-messaging-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-test-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-remoting-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-openid-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/protobuf-java-3.11.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-config-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-web-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-messaging-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-oauth2-resource-server-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-security-taglibs-5.2.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/gson-2.8.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CourseraGUI_JDBC/out/artifacts/CourseraGUI_JDBC_war_exploded/WEB-INF/lib/spring-instrument-5.2.3.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

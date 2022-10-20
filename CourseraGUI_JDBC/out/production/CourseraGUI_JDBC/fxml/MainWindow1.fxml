@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="612.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxControl.MainWindow1">
+  <tabs>
+    <Tab onSelectionChanged="#showAllAvailableCourses" text="All courses">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                  <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox>
+                           <children>
+                              <Label text="All courses" textAlignment="CENTER" textFill="#2e42a8">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Arimo" size="30.0" />
+                                 </font>
+                              </Label>
+                              <ListView fx:id="allCoursesListView" prefHeight="300.0" />
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="367.0" prefWidth="328.0">
+                           <children>
+                              <Label text="Course information" textAlignment="CENTER" textFill="#5e1414">
+                                 <font>
+                                    <Font name="Arimo" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Line endX="240.0" endY="20.0" startX="45.0" startY="20.0" stroke="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Line>
+                              <Label fx:id="mainAdmin" text="Course creator:" textFill="#722424">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="mainStartDate" text="Start date:" textFill="#611919">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="mainEndDate" text="End date:" textFill="#6b1717">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="mainTotalFolders" text="Total folders: " textFill="#681212">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="mainTotalFiles" text="Total files: " textFill="#400c0c">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="mainTotalStudents" text="Number of students students:" textFill="#400707">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button fx:id="mainEnrollButton" mnemonicParsing="false" onAction="#enrollToCourse" text="Enroll to course" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="enrolledCoursesTab" onSelectionChanged="#initEnrolledCourses" text="Enrolled Courses">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <HBox layoutX="6.0" prefHeight="371.0" prefWidth="636.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="221.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox prefHeight="371.0" prefWidth="457.0">
+                           <children>
+                              <Label prefHeight="23.0" prefWidth="184.0" text="Course info" textAlignment="CENTER" textFill="#7175a4">
+                                 <font>
+                                    <Font name="Arimo Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="enrolledCourseAdmin" text="Admin: " textFill="#541111">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="enrolledCourseStartDate" text="Start date:" textFill="#751d1d">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="enrolledCourseEndDate" text="End date:" textFill="#681515">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button fx:id="leaveCourseButton" mnemonicParsing="false" onAction="#leaveSelectedCourse" text="Leave course" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="371.0" prefWidth="104.0">
+                           <children>
+                              <Line endX="240.0" endY="20.0" startX="45.0" startY="20.0" stroke="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Line>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <TreeView fx:id="enrolledCourseTreeView" layoutX="284.0" layoutY="127.0" onMouseClicked="#mouseClick" prefHeight="237.0" prefWidth="328.0" />
+                  <ChoiceBox fx:id="enrolledCourseChoiceBox" layoutX="424.0" layoutY="78.0" onAction="#showEnrolledCourse" prefWidth="150.0" />
+                  <Label layoutX="429.0" layoutY="35.0" text="Select course" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arimo" size="18.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab onSelectionChanged="#initInfo" text="Account Information">
+        <content>
+          <AnchorPane fx:id="informationPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox prefWidth="300.0">
+                           <children>
+                              <Label text="Account Information" textFill="#864949">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Arimo Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="250.0" endY="20.0" startX="45.0" startY="20.0" stroke="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin></Line>
+                              <Label fx:id="accType" text="Account type: " textFill="#7c4040">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="name" text="Name:" textFill="#461313">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="lastName" text="Last name: " textFill="#612929">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="email" text="Email:" textFill="#572020">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="password" text="Password:" textFill="#6b2626">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="totalEnrolled" text="Total enrolled courses: " textFill="#792525">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button fx:id="logOutBtn" mnemonicParsing="false" onAction="#logOut" text="Log out" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="79.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox prefWidth="300.0">
+                           <children>
+                              <Label text="Change Information" textFill="#5b1616" wrapText="true">
+                                 <font>
+                                    <Font name="Arimo" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Change" textFill="#8a3030">
+                                 <padding>
+                                    <Insets left="20.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Line endX="250.0" endY="20.0" startX="55.0" startY="20.0" stroke="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin></Line>
+                              <HBox prefHeight="50.0" prefWidth="300.0">
+                                 <children>
+                                    <ChoiceBox fx:id="changeChoice" onAction="#changeInformation" prefWidth="150.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </ChoiceBox>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <VBox prefHeight="206.0" prefWidth="213.0">
+                                 <children>
+                                    <Label fx:id="change1" text="Current" textFill="#361212">
+                                       <padding>
+                                          <Insets left="20.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="textChange1" prefWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="100.0" top="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label fx:id="change2" text="New " textFill="#752727">
+                                       <padding>
+                                          <Insets left="20.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="textChange2" prefWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="100.0" top="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label fx:id="change3" text="Confirm new " textFill="#901c1c">
+                                       <padding>
+                                          <Insets left="20.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="textChange3" prefWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="100.0" top="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <Button fx:id="confirmChange" mnemonicParsing="false" onAction="#updateInformation" text="Change" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+    <Tab fx:id="courseCreation" onSelectionChanged="#showCreatedCourses" text="My courses">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <VBox prefWidth="300.0">
+                           <children>
+                              <Label text="Create course" textFill="#343eab">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Arimo Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="185.0" endY="20.0" startX="45.0" startY="20.0" stroke="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Line>
+                              <Label fx:id="accType1" text="Enter course name" textFill="#541919">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="myCourseName">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="100.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label fx:id="email1" text="Enter price" textFill="#611717">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="myCoursePrice">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="100.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label fx:id="name1" text="Enter start date " textFill="#541010">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="myCourseSDate">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="100.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label fx:id="lastName1" text="Enter end date " textFill="#801d1d">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="myCourseEDate">
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="100.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Button fx:id="createCourseBtn" mnemonicParsing="false" onAction="#createNewCourse" text="Create course" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox prefWidth="300.0">
+                           <children>
+                              <Label text="Edit course" textFill="#7c1414" wrapText="true">
+                                 <font>
+                                    <Font name="Arimo Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TreeView fx:id="myCoursesTreeView" onMouseClicked="#editMyCourse" prefHeight="200.0" prefWidth="200.0" />
+                              <Line endX="173.0" endY="20.0" startX="55.0" startY="20.0" stroke="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Line>
+                              <HBox prefHeight="50.0" prefWidth="300.0">
+                                 <children>
+                                    <ChoiceBox fx:id="editCourseBox" onAction="#displayMyCoursesTree" prefWidth="150.0">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </ChoiceBox>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <VBox prefHeight="250.0" prefWidth="100.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#deleteSelectedCourse" text="Delete course" textFill="WHITE">
+                                             <HBox.margin>
+                                                <Insets left="80.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

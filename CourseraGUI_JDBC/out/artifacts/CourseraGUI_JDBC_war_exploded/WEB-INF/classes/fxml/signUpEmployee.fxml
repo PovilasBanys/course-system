@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="607.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxControl.SignUpEmployee">
+   <children>
+      <Label layoutX="43.0" layoutY="102.0" text="login" />
+      <Label layoutX="43.0" layoutY="161.0" text="password" />
+      <Label layoutX="46.0" layoutY="289.0" text="name" />
+      <Label layoutX="46.0" layoutY="334.0" text="surname" />
+      <Label layoutX="43.0" layoutY="388.0" text="date created" />
+      <Label layoutX="47.0" layoutY="438.0" text="course is" />
+      <Button fx:id="employeeSignUp" layoutX="61.0" layoutY="525.0" mnemonicParsing="false" onAction="#employeeSignUp" text="Sign up" />
+      <Button fx:id="exitToLogin" layoutX="239.0" layoutY="525.0" mnemonicParsing="false" onAction="#exitToLogin" text="Exit" />
+      <TextField fx:id="loginField" layoutX="142.0" layoutY="98.0" />
+      <TextField fx:id="passwordField" layoutX="142.0" layoutY="157.0" />
+      <TextField fx:id="nameField" layoutX="142.0" layoutY="285.0" />
+      <TextField fx:id="surnameField" layoutX="142.0" layoutY="330.0" />
+      <TextField fx:id="courseField" layoutX="142.0" layoutY="434.0" />
+      <DatePicker fx:id="dateField" layoutX="142.0" layoutY="384.0" />
+      <Label layoutX="29.0" layoutY="225.0" text="confirm password" />
+      <PasswordField fx:id="confirmField" layoutX="142.0" layoutY="221.0" />
+      <Label layoutX="55.0" layoutY="489.0" text="email" />
+      <TextField fx:id="emailField" layoutX="142.0" layoutY="485.0" />
+   </children>
+</AnchorPane>
